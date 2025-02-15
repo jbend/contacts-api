@@ -13,7 +13,7 @@ pub struct Contact {
 }
 
 impl Contact {
-    fn new (name: String, email: String, phone: String) -> Self {
+    fn new(name: String, email: String, phone: String) -> Self {
         let now = chrono::Utc::now();
         Self {
             id: uuid::Uuid::new_v4(),
